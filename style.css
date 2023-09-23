@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  background: white;
+  width: 410px;
+  padding: 40px 30px;
+  border-radius: 12px;
+}
+
+.container h1 {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.container form .data {
+  height: 45px;
+  margin: 25px auto 40px;
+}
+
+form .data input {
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 20px;
+  border: none;
+
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%) bottom no-repeat;
+  background-size: 100% 5px;
+}
+
+form .data input:focus {
+  outline: none;
+}
+
+form .forgot-pass {
+  padding-left: 10px;
+  margin-top: -15px;
+}
+
+form .signup-link {
+  text-align: center;
+}
+
+form .forgot-pass a,
+form .signup-link a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+form .forgot-pass a:hover,
+form .signup-link a:hover {
+  text-decoration: underline;
+}
+
+form .btn {
+  margin: 30px auto;
+  height: 45px;
+  width: 100%;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+form .btn .gradient {
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  z-index: -1;
+  background: linear-gradient(to right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  transition: left 0.4s;
+}
+
+form .btn:hover .gradient {
+  left: 0;
+}
+
+form .btn button {
+  height: 100%;
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+form .btn button:focus {
+  outline: none;
+}
